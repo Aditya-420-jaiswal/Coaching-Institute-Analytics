@@ -1,0 +1,5 @@
+"source_id","source_type","data_fields_supported","source_url","access_date","verification_status","research_guidance"
+"SRC001","Institute official website","Institute/course/fee details","Enter exact URL after research",NULL,"Pending","Record exact page and access date"
+"SRC002","Official exam authority website","Exam result definitions and official outcomes","Enter exact URL after research",NULL,"Pending","Prefer official exam authority data"
+"SRC003","Public review platform","Ratings and review counts","Enter exact URL after research",NULL,"Pending","Record platform, location and observation date"
+"SRC004","Institute official result page","Institute-reported results","Enter exact URL after research",NULL,"Pending","Label claims as institute-reported unless independently verified"
