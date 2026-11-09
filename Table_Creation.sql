@@ -1,0 +1,15 @@
+ALTER TABLE public.branches ADD CONSTRAINT fk_branches_institutes FOREIGN KEY (institute_id) REFERENCES institutes(institute_id);
+ALTER TABLE public.branches ADD CONSTRAINT branches_pkey PRIMARY KEY (branch_id);
+ALTER TABLE public.courses ADD CONSTRAINT fk_courses_exams FOREIGN KEY (exam_id) REFERENCES exams(exam_id);
+ALTER TABLE public.courses ADD CONSTRAINT fk_courses_institutes FOREIGN KEY (institute_id) REFERENCES institutes(institute_id);
+ALTER TABLE public.courses ADD CONSTRAINT courses_pkey PRIMARY KEY (course_id);
+ALTER TABLE public.exams ADD CONSTRAINT exams_pkey PRIMARY KEY (exam_id);
+ALTER TABLE public.fees ADD CONSTRAINT fk_fees_courses FOREIGN KEY (course_id) REFERENCES courses(course_id);
+ALTER TABLE public.fees ADD CONSTRAINT fees_pkey PRIMARY KEY (fee_id);
+ALTER TABLE public.institutes ADD CONSTRAINT institutes_pkey PRIMARY KEY (institute_id);
+ALTER TABLE public.results ADD CONSTRAINT fk_results_exams FOREIGN KEY (exam_id) REFERENCES exams(exam_id);
+ALTER TABLE public.results ADD CONSTRAINT fk_results_institutes FOREIGN KEY (institute_id) REFERENCES institutes(institute_id);
+ALTER TABLE public.results ADD CONSTRAINT results_pkey PRIMARY KEY (result_record_id);
+ALTER TABLE public.reviews ADD CONSTRAINT fk_reviews_institutes FOREIGN KEY (institute_id) REFERENCES institutes(institute_id);
+ALTER TABLE public.reviews ADD CONSTRAINT reviews_pkey PRIMARY KEY (review_id);
+ALTER TABLE public.sources ADD CONSTRAINT sources_pkey PRIMARY KEY (source_id);
